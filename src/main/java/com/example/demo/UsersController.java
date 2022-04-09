@@ -10,10 +10,7 @@ import java.util.Map;
 public class UsersController {
 
 
-    @RequestMapping("/users")
-    public String users() {
-        return "example";
-    }
+
 
 }
 

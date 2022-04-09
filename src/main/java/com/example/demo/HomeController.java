@@ -16,13 +16,21 @@ public class HomeController {
     public String index() {
         return "Hello World!";
     }
+
+    @RequestMapping("/example")
+    public String users() {
+        return "example";
+    }
+
+
     @RequestMapping("/example2/{name}/{age}")
     @ResponseBody
     public String index2(
             @PathVariable String name,
             @PathVariable int age
     ) {
-        return "Hello! " + name + " you are " + age + " years old!";
+        return "Hello " + name + "! You are " + age + " years old!";
     }
+
 }
 
