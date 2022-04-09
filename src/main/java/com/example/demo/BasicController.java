@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class BasicController {
 
-    @RequestMapping("/basicc")
+    @RequestMapping("/basic")
     public String basic() {
         return "example";
     }
